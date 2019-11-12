@@ -5,3 +5,5 @@
 >Patient: "My body hurts"
 >
 >Doctor: "Your bones are haunted, drink this bottle of mercury and call me in the morning"
+
+![Tux, the Linux mascot](/assets/images/tux.png)
