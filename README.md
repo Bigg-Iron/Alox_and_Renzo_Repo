@@ -1,6 +1,6 @@
 # Alox_and_Renzo_Repo
 
-[website](https://bigg-iron.github.io/Alox_and_Renzo_Repo/)
+[w e b s i t e](https://bigg-iron.github.io/Alox_and_Renzo_Repo/)
 
 ## This repo is a place for us to store our cursed ideas
 
