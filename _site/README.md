@@ -27,4 +27,4 @@ This repo is a place for us to store our cursed ideas
 
 ## Movie List
 
-- Last of The Dogmen
+- [Last of The Dogmen](https://www.imdb.com/title/tt0113617/)

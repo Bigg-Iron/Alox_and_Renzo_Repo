@@ -1,10 +1,8 @@
 rm(list = ls())
 
-maine <- read.csv('maine.csv')
-maine_pool <- read.csv('maine-pool.csv')
+maine <- read.csv('docs/maineR/maine.csv')
+maine_pool <- read.csv('docs/maineR/maine-pool.csv')
 J_maine01 <- 513
-
-
 
 m_samp <- runif(100, min = 0, max = 1) 
 
@@ -27,3 +25,4 @@ coal4 <- ecolottery::coalesc(J = J_maine01, m = m_samp[4], pool = maine_pool)
 new <- rbind(coal1, coal2, coal3, coal4)
 
 new <- c(coal1, coal2, coal3, coal4)
+
