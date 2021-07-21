@@ -1,15 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-<<<<<<< HEAD
-=======
     activesupport (6.0.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
->>>>>>> 68a2ea2708d1651d3e46e20e549fffda8606c44e
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
