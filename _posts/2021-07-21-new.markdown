@@ -5,4 +5,4 @@ date:   2021-07-21 01:45:22 -0700
 categories: jekyll update
 ---
 First Post
-[Alox and Renzo Repo](../assets/Backpacking_Checklist_Printable.pdf)
+[Alox and Renzo Repo](../assets/puffin.jpg)
