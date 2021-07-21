@@ -2,7 +2,22 @@
 layout: post
 title:  "New Post"
 date:   2021-07-21 01:45:22 -0700
-categories: jekyll update
+categories: outdoor
 ---
+
 First Post
-[Alox and Renzo Repo](../assets/puffin.jpg)
+
+[Backpacking checklist](/assets/Backpacking_Checklist_Printable.pdf)
+
+[puffin](/assets/puffin.jpg)
+
+
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
