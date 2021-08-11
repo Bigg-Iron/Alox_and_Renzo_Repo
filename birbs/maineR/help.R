@@ -1,3 +1,6 @@
+install.packages("packrat")
+
+packrat::init("./")
 
 # ----------------------- setup ---------------------
 
