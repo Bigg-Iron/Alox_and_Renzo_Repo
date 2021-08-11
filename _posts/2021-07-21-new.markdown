@@ -6,11 +6,7 @@ author: Renzo
 categories: outdoor
 ---
 
-First Post
-
-[Backpacking checklist](/assets/Backpacking_Checklist_Printable.pdf)
-
-[puffin](/assets/puffin.jpg)
+Test Post
 
 
 <ul>
