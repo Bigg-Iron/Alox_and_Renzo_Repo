@@ -1,10 +1,11 @@
-
+install.packages(c("ecolottery", "tidyverse", "parallel", "vegan"))
 
 # ------------------ setup ---------------------------------
 
 rm(list = ls())
 
-setwd('~/academics/gradschool/CSULB/thesis/idea02_gradients/scripts')
+# This will only work for alex's local machine
+# setwd('~/academics/gradschool/CSULB/thesis/idea02_gradients/scripts')
 
 library(ecolottery) # obviouslyl
 library(tidyverse) # for data manipulation help
@@ -12,7 +13,7 @@ library(parallel) # for using multiple cores for faster analysis
 library(vegan) # just to reference BCI data
 
 
-maine <- read.csv('maine.csv')
+maine <- read.csv('./birbs/maine.csv')
 maine01 <- maine[maine$Route == 1,]
 
 
