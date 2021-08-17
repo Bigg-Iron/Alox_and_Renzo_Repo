@@ -1,15 +1,23 @@
-
+# Install necessary packages 
+install.packages('ecolottery')
+install.packages('tidyverse')
+install.packages('parallel')
+install.packages('vegan')
+install.packages('tidyr')
 
 # ------------------ setup ---------------------------------
 
 rm(list = ls())
 
-setwd('~/academics/gradschool/CSULB/thesis/idea02_gradients/scripts')
+# FIXME: You want to use environment variables for your file path so that other people can run the code 
+# setwd('~/academics/gradschool/CSULB/thesis/idea02_gradients/scripts')
 
+# Load packages
 library(ecolottery) # obviouslyl
 library(tidyverse) # for data manipulation help
 library(parallel) # for using multiple cores for faster analysis
 library(vegan) # just to reference BCI data
+library(tidyr) # Wanted to see if this package would work...
 
 
 maine <- read.csv('maine.csv')
