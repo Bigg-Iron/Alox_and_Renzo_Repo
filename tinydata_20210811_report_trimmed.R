@@ -9,7 +9,7 @@ install.packages('tidyr')
 
 rm(list = ls())
 
-# FIXME: You want to use environment variables for your file path so that other people can run the code 
+# FIXME: You want to use environment variables for your file path so that other people can run the code (see my test.py file for an example)
 # setwd('~/academics/gradschool/CSULB/thesis/idea02_gradients/scripts')
 
 # Load packages
