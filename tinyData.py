@@ -19,12 +19,18 @@ df2 = maineCSV_Trimmed.drop(['duplicateOf_X'], axis=1)
 # Quick check,,, Uncomment the line below to check the first 5 instances of the data frame
 # print(df2.head(6))
 
-df3 = df2.melt(id_vars=["X", "RouteDataID", "CountryNum","StateNum","Route", "RPID", "Year", "AOU"], 
-        var_name="Stop", 
-        value_name="Instances of AOU")
+# Melt Stops into rows
+df3 = df2.melt(id_vars=["X", "RouteDataID", "CountryNum", "StateNum", "Route", "RPID", "Year", "AOU"],
+               var_name="Stop",
+               value_name="Instances of AOU")
 
-
+# Make sure to always have a check on the data after reading in the data. When displaying a DataFrame, the first and last 5 rows will be shown by default:
 print(df3)
 
+# The describe() method provides a quick overview of the numerical data in a DataFrame.
+print(df3.describe())
+
+# Save new DataFrame as csv data
+df3.to_csv('dataFrameTo.csv', index=False)
 
 print('...Done...')
