@@ -30,7 +30,10 @@ print(df3)
 # The describe() method provides a quick overview of the numerical data in a DataFrame.
 print(df3.describe())
 
-# Save new DataFrame as csv data
-df3.to_csv('dataFrameTo.csv', index=False)
+# Save converted csv DataFrame to a compressed folder in data/
+compression_opts = dict(method='zip',
+                        archive_name='dataFrameTo.csv')  
+df3.to_csv('data/newData.zip', index=False,
+          compression=compression_opts)
 
 print('...Done...')
