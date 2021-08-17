@@ -16,7 +16,7 @@ maineCSV_Trimmed = maineCSV.drop(['route_totals'], axis=1)
 # drop duplicate of 'X' column
 df2 = maineCSV_Trimmed.drop(['duplicateOf_X'], axis=1)
 
-# Uncomment the line below to check the first 5 instances of the data frame
+# Quick check,,, Uncomment the line below to check the first 5 instances of the data frame
 # print(df2.head(6))
 
 df3 = df2.melt(id_vars=["X", "RouteDataID", "CountryNum","StateNum","Route", "RPID", "Year", "AOU"], 
