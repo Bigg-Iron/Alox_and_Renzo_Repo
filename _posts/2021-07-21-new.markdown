@@ -1,9 +1,0 @@
----
-layout: post
-title:  "New Post"
-date:   2021-07-21 01:45:22 -0700
-categories: jekyll update
----
-First Post
-
-[Backpacking Checklist](../assets/Backpacking_Checklist_Printable.pdf)
