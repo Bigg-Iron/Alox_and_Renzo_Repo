@@ -2,6 +2,7 @@ import pandas as pd
 import sys
 import pathlib
 import os
+import matplotlib.pyplot as plt
 
 
 path_To_Data = pathlib.PurePath('data/maine.csv')
@@ -17,7 +18,7 @@ maineCSV_Trimmed = maineCSV.drop(['route_totals'], axis=1)
 df2 = maineCSV_Trimmed.drop(['duplicateOf_X'], axis=1)
 
 # Quick check,,, Uncomment the line below to check the first 5 instances of the data frame
-# print(df2.head(6))
+# print(df2)
 
 # Melt Stops into rows
 df3 = df2.melt(id_vars=["X", "RouteDataID", "CountryNum", "StateNum", "Route", "RPID", "Year", "AOU"],
@@ -27,13 +28,19 @@ df3 = df2.melt(id_vars=["X", "RouteDataID", "CountryNum", "StateNum", "Route", "
 # Make sure to always have a check on the data after reading in the data. When displaying a DataFrame, the first and last 5 rows will be shown by default:
 print(df3)
 
+def histogram():
+    df3['Instances of AOU'].hist(bins=50, figsize=(20,15))
+    plt.show
+
+# histogram()
+
 # The describe() method provides a quick overview of the numerical data in a DataFrame.
 print(df3.describe())
 
 # Save converted csv DataFrame to a compressed folder in data/
-compression_opts = dict(method='zip',
-                        archive_name='dataFrameTo.csv')  
-df3.to_csv('data/newData.zip', index=False,
-          compression=compression_opts)
+# compression_opts = dict(method='zip',
+#                         archive_name='dataFrameTo.csv')  
+# df3.to_csv('data/newData.zip', index=False,
+#           compression=compression_opts)
 
 print('...Done...')
